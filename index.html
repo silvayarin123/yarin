@@ -1,68 +1,177 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pedro Yarin · Marketing, vídeo e automação</title>
-<meta name="description" content="Tráfego pago, produção de vídeos, e automação com Pedro Yarin, em Londrina, Paraná. Conheça os serviços e fale pelo WhatsApp.">
-<meta name="theme-color" content="#f8f3eb">
-<meta property="og:title" content="Pedro Yarin · Marketing, vídeo e automação">
-<meta property="og:description" content="Conheça os serviços e converse comigo sobre seu projeto.">
-<meta property="og:image" content="https://pedro-yarin-wake-bio.andrezacavichioli.chatgpt.site/assets/pedro.webp">
-<link rel="icon" href="assets/wake.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pedro Yarin · Tráfego, vídeo e automação</title>
+<meta name="description" content="Estratégia, vídeo e tecnologia para a sua marca ganhar visibilidade e conquistar clientes. Londrina, PR.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pedro Yarin · Tráfego, vídeo e automação">
+<meta property="og:description" content="Estratégia, vídeo e tecnologia para a sua marca ganhar visibilidade e conquistar clientes.">
+<meta property="og:image" content="https://yarin-five.vercel.app/assets/pedro-capa-horizontal.webp">
+<meta property="og:url" content="https://yarin-five.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#101112">
+<style>
+/* VOICE: Pedro falando direto com quem chegou pela bio — curto, confiante, sem jargão.
+   IDEA: um cartão de visita vivo: rosto, três caminhos e prova social, tudo a um toque do WhatsApp.
+   PICTURE: retrato em arco sobre a dobra de cobre, com selo girando "Tráfego · Vídeo · Automação".
+   COLOUR and TYPE: grafite #101112, papel #F4F0E8, cobre #C87952; Nimbus Sans grande e apertada.
+   LAYOUT: coluna única pensada para o celular; no computador vira duas colunas com o retrato fixo. */
+@font-face{font-family:"Nimbus";src:url(https://wake-painel.vercel.app/assets/nimbus.woff) format("woff");font-display:swap}
+:root{--g:#101112;--g2:#18191b;--p:#F4F0E8;--c:#C87952;--z:#A5A29B;--ln:rgba(244,240,232,.14)}
+*{box-sizing:border-box;min-width:0}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--g);color:var(--p);font:17px/1.5 "Nimbus","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit}
+h1,h2,h3,p{margin:0;font-weight:400}
+.k{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--z);display:flex;align-items:center;gap:10px}
+.k::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--c);flex:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+/* topo */
+.top{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+.top b{font-weight:400;letter-spacing:.28em}
+.top span{color:var(--z)}
+/* layout */
+.grid{display:grid;grid-template-columns:1fr;gap:40px;padding-bottom:40px}
+@media (min-width:920px){.grid{grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}.lado{position:sticky;top:24px}}
+/* hero */
+.arco{position:relative;aspect-ratio:4/5;max-width:440px;border-radius:999px 999px 8px 8px;overflow:hidden;background:var(--g2) url(https://wake-agencia.vercel.app/assets/copper-fold.webp) center/cover}
+.arco img{position:absolute;inset:14% 10% 0 10%;width:80%;height:86%;object-fit:cover;object-position:50% 20%;border-radius:999px 999px 0 0}
+.selo{position:absolute;right:-6px;bottom:28px;width:112px;height:112px;border-radius:50%;background:var(--c);color:var(--g);display:grid;place-items:center}
+.selo svg{position:absolute;inset:0;animation:gira 24s linear infinite}
+.selo i{font-style:normal;font-size:26px}
+@keyframes gira{to{transform:rotate(360deg)}}
+.hero{margin-top:28px}
+.hero h1{font-size:clamp(56px,15vw,104px);line-height:.9;letter-spacing:-.05em}
+.hero h1 em{font-style:normal;color:var(--c)}
+.ig{display:inline-flex;margin-top:12px;color:var(--z);text-decoration:none;font-size:16px}
+.ig:hover{color:var(--p)}
+.hero p{font-size:20px;line-height:1.35;margin-top:22px;max-width:30ch;color:#e4dfd6}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:28px;background:var(--c);color:var(--g);text-decoration:none;padding:20px 24px;border-radius:99px;font-size:17px;min-height:56px;transition:transform .15s,background .15s}
+.cta:hover{background:#d88b65;transform:translateY(-2px)}
+.cta span{font-size:20px}
+/* caminhos */
+.cam{list-style:none;margin:0;padding:0;border-top:1px solid var(--ln)}
+.cam li{border-bottom:1px solid var(--ln)}
+.cam details summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:44px 1fr 28px;gap:12px;align-items:center;padding:24px 0;min-height:56px}
+.cam details summary::-webkit-details-marker{display:none}
+.cam .n{color:var(--c);font-size:14px;letter-spacing:.06em}
+.cam h3{font-size:clamp(28px,7vw,40px);line-height:1.02;letter-spacing:-.03em}
+.cam small{display:block;font-size:15px;color:var(--z);margin-top:6px;letter-spacing:0}
+.cam .mais{width:28px;height:28px;border:1px solid var(--ln);border-radius:50%;display:grid;place-items:center;transition:transform .2s,background .2s}
+.cam details[open] .mais{transform:rotate(45deg);background:var(--c);color:var(--g);border-color:var(--c)}
+.cam .corpo{padding:0 0 26px 56px;display:grid;gap:16px}
+.cam .corpo p{color:#d9d4cb;max-width:46ch}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{border:1px solid var(--ln);border-radius:99px;padding:7px 12px;font-size:13px;color:var(--z)}
+.lk{display:inline-flex;align-items:center;gap:10px;color:var(--c);text-decoration:none;font-size:16px;min-height:44px}
+.lk:hover{color:var(--p)}
+/* faixa */
+.faixa{background:var(--c);color:var(--g);overflow:hidden;padding:14px 0;margin:8px 0 0}
+.trk{display:flex;gap:28px;width:max-content;animation:roda 28s linear infinite;align-items:center}
+.faixa span{font-size:clamp(24px,5vw,40px);letter-spacing:-.01em;white-space:nowrap}
+@keyframes roda{to{transform:translateX(-50%)}}
+/* marcas */
+.marcas{padding:56px 0 48px}
+.marcas h2{font-size:clamp(30px,6vw,48px);line-height:1.05;letter-spacing:-.03em;margin:14px 0 30px;max-width:16ch}
+.rail{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.rail .trk{gap:52px;animation-duration:42s}
+.rail img{display:block;flex:none;height:var(--h);filter:brightness(0) invert(1);opacity:.88}
+/* segmentos */
+.seg{padding:0 0 64px}
+.seg .tags{margin-top:18px}
+.seg .tags span{font-size:15px;padding:10px 16px;color:#d9d4cb}
+/* contato */
+.fim{background:var(--p);color:var(--g);padding:64px 0 40px;border-radius:24px 24px 0 0}
+.fim .k{color:#6b6760}
+.fim h2{font-size:clamp(52px,13vw,112px);line-height:.92;letter-spacing:-.05em;margin-top:16px}
+.fim h2 em{font-style:normal;color:var(--c)}
+.fim p{margin-top:18px;max-width:40ch;font-size:18px}
+.fim .cta{max-width:440px;background:var(--g);color:var(--p)}
+.fim .cta:hover{background:#2a2b2e}
+.rod{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:56px;padding-top:20px;border-top:1px solid rgba(16,17,18,.15);font-size:14px;color:#6b6760}
+.rod a{text-decoration:none}
+.rod a:hover{color:var(--g)}
+:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.trk,.selo svg{animation:none}}
+</style>
 </head>
 <body>
-<a class="skip" href="#servicos">Ir para serviços</a>
-<svg class="defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<symbol id="traffic" viewBox="0 0 100 100"><path d="M12 82h76M23 75V58h12v17m10 0V45h12v30m10 0V30h12v45M18 46l23-18 15 5 24-18M67 15h13v13"/></symbol>
-<symbol id="video" viewBox="0 0 100 100"><rect x="13" y="23" width="74" height="54" rx="9"/><path d="m43 37 20 13-20 13zM31 86h38"/></symbol>
-<symbol id="auto" viewBox="0 0 100 100"><rect x="36" y="10" width="28" height="22" rx="5"/><rect x="11" y="67" width="28" height="22" rx="5"/><rect x="61" y="67" width="28" height="22" rx="5"/><path d="M50 32v18H25v17m25-17h25v17"/></symbol>
+<div class="wrap">
+  <header class="top"><b>Pedro Yarin</b><span>Londrina, PR</span></header>
 
-</svg>
-<main class="layout">
-<aside class="profile" aria-label="Sobre Pedro Yarin">
-<div class="signature"><img src="assets/wake.svg" alt="WAKE" width="74" height="26"><span>Londrina, PR</span></div>
-<div class="identity"><img class="avatar" src="assets/pedro.webp" alt="Pedro Yarin" width="76" height="76"><div><strong>Pedro Yarin</strong><a href="https://www.instagram.com/silvayarin/">@silvayarin</a></div></div>
-<h1><span>Marketing</span><span>Vídeo</span><span>Automação</span></h1>
-<p>Estratégia, conteúdo e tecnologia para sua marca ganhar visibilidade e conquistar clientes.</p>
-<a class="primary" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Quero%20solicitar%20um%20or%C3%A7amento.">Solicitar orçamento <svg class="cta-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></a>
-</aside>
-<div class="column">
-<section id="servicos" aria-labelledby="service-heading">
-<header class="section-head"><h2 id="service-heading">Escolha seu próximo passo.</h2></header>
-<details class="card" name="services" open>
- <summary><span class="art art-1"><span class="counter">01</span><span class="art-title">Tráfego pago</span><svg class="art-icon" aria-hidden="true"><use href="#traffic"/></svg></span>
- <span class="card-head"><span><strong>Gestão de Tráfego</strong><small>Campanhas para atrair o público certo.</small></span><span class="toggle" aria-hidden="true"></span></span></summary>
- <div class="card-body"><p>Planejamento de campanhas, gestão de mídia e acompanhamento para orientar os próximos investimentos.</p><a class="primary" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Quero%20saber%20mais%20sobre%20Gest%C3%A3o%20de%20Tr%C3%A1fego">Quero saber sobre tráfego <svg class="cta-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></a></div></details>
-<details class="card" name="services" >
- <summary><span class="art art-2"><span class="counter">02</span><span class="art-title">Produção de vídeo</span><svg class="art-icon" aria-hidden="true"><use href="#video"/></svg></span>
- <span class="card-head"><span><strong>Produção de Vídeos Profissionais</strong><small>Conteúdo que conecta e vende.</small></span><span class="toggle" aria-hidden="true"></span></span></summary>
- <div class="card-body"><p>Produção audiovisual para apresentar sua marca, seus produtos e seus serviços com clareza.</p><a class="primary" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Quero%20saber%20mais%20sobre%20Produ%C3%A7%C3%A3o%20de%20V%C3%ADdeos%20Profissionais">Quero produzir vídeos <svg class="cta-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></a></div></details>
-<details class="card" name="services" >
- <summary><span class="art art-3"><span class="counter">03</span><span class="art-title">Automação</span><svg class="art-icon" aria-hidden="true"><use href="#auto"/></svg></span>
- <span class="card-head"><span><strong>Tecnologia / Automação</strong><small>Soluções que otimizam seu tempo.</small></span><span class="toggle" aria-hidden="true"></span></span></summary>
- <div class="card-body"><p>Automação para simplificar processos e reduzir tarefas repetitivas na rotina do seu negócio.</p><a class="primary" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Quero%20saber%20mais%20sobre%20Tecnologia%20%2F%20Automa%C3%A7%C3%A3o">Quero falar sobre automação <svg class="cta-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></a></div></details>
+  <div class="grid">
+    <div class="lado">
+      <div class="arco">
+        <img src="/assets/pedro.webp" alt="Pedro Yarin" width="589" height="700">
+        <div class="selo" aria-hidden="true"><svg viewBox="0 0 112 112"><defs><path id="cs" d="M56 56m-40 0a40 40 0 1 1 80 0a40 40 0 1 1-80 0"/></defs><text font-size="10.5" letter-spacing="2.6" fill="#101112" font-family="Nimbus,Helvetica,sans-serif"><textPath href="#cs">TRÁFEGO ✳ VÍDEO ✳ AUTOMAÇÃO ✳</textPath></text></svg><i>✳</i></div>
+      </div>
+      <div class="hero">
+        <h1>Pedro<br><em>Yarin.</em></h1>
+        <a class="ig" href="https://www.instagram.com/silvayarin/" target="_blank" rel="noopener">@silvayarin</a>
+        <p>Estratégia, vídeo e tecnologia para a sua marca ganhar visibilidade e conquistar clientes.</p>
+        <a class="cta" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Quero%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">Solicitar orçamento <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
 
-</section>
-<section id="clientes" aria-labelledby="client-heading">
-<header class="section-head"><span>02 / Portfólio</span><h2 id="client-heading">Marcas que fizeram parte da jornada.</h2></header>
-<div class="brand-controls"><button type="button" id="brand-motion" hidden>Pausar logos</button></div>
-<div class="brand-window" id="brand-window" tabindex="0" aria-label="Logos das marcas atendidas">
-  <div class="brand-track"><div class="brand-set"><div><img src="assets/ambev.webp" alt="Ambev"></div><div><img src="assets/pado.webp" alt="Pado"></div><div><img src="assets/gelaboca.webp" alt="Gelaboca"></div><div><img src="assets/roma.webp" alt="Pizza Roma"></div><div><img src="assets/adr.webp" alt="ADR"></div><div class="morena"><img src="assets/morena-rosa.webp" alt="Morena Rosa"></div><div><img src="assets/zinco.webp" alt="Zinco"></div><div><img src="assets/live-colours.webp" alt="Live Colours"></div><div><img src="assets/mor-salon.webp" alt="Mor Salon"></div><div><img src="assets/londrina-norte-shopping.webp" alt="Londrina Norte Shopping"></div><div><img src="assets/aurora-shopping.webp" alt="Aurora Shopping"></div><div><img src="assets/agrobar.webp" alt="Agrobar"></div><div><img src="assets/agroplay.webp" alt="Agroplay"></div><div><img src="assets/schwarzkopf.webp" alt="Schwarzkopf"></div><div><img src="assets/folks.webp" alt="Folks"></div></div><div class="brand-set brand-copy" aria-hidden="true"><div><img src="assets/ambev.webp" alt="Ambev"></div><div><img src="assets/pado.webp" alt="Pado"></div><div><img src="assets/gelaboca.webp" alt="Gelaboca"></div><div><img src="assets/roma.webp" alt="Pizza Roma"></div><div><img src="assets/adr.webp" alt="ADR"></div><div class="morena"><img src="assets/morena-rosa.webp" alt="Morena Rosa"></div><div><img src="assets/zinco.webp" alt="Zinco"></div><div><img src="assets/live-colours.webp" alt="Live Colours"></div><div><img src="assets/mor-salon.webp" alt="Mor Salon"></div><div><img src="assets/londrina-norte-shopping.webp" alt="Londrina Norte Shopping"></div><div><img src="assets/aurora-shopping.webp" alt="Aurora Shopping"></div><div><img src="assets/agrobar.webp" alt="Agrobar"></div><div><img src="assets/agroplay.webp" alt="Agroplay"></div><div><img src="assets/schwarzkopf.webp" alt="Schwarzkopf"></div><div><img src="assets/folks.webp" alt="Folks"></div></div></div>
+    <main>
+      <div class="k" style="margin-bottom:8px">Escolha seu próximo passo</div>
+      <ul class="cam">
+        <li><details open>
+          <summary><span class="n">01</span><h3>Tráfego pago<small>Campanhas para atrair o público certo.</small></h3><span class="mais" aria-hidden="true">+</span></summary>
+          <div class="corpo"><p>Planejamento de campanhas no Meta Ads, gestão da verba e acompanhamento semanal, com um painel para você ver os resultados em tempo real.</p>
+            <div class="tags"><span>Meta Ads</span><span>Planejamento</span><span>Painel de resultados</span></div>
+            <a class="lk" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Quero%20saber%20mais%20sobre%20Gest%C3%A3o%20de%20Tr%C3%A1fego" target="_blank" rel="noopener">Quero saber sobre tráfego ↗</a></div>
+        </details></li>
+        <li><details>
+          <summary><span class="n">02</span><h3>Produção de vídeo<small>Conteúdo que conecta e vende.</small></h3><span class="mais" aria-hidden="true">+</span></summary>
+          <div class="corpo"><p>Roteiro, captação e edição de vídeos para anúncios, Reels e redes sociais, pensados para prender a atenção nos primeiros segundos.</p>
+            <div class="tags"><span>Roteiro</span><span>Captação</span><span>Edição</span></div>
+            <a class="lk" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Quero%20saber%20mais%20sobre%20Produ%C3%A7%C3%A3o%20de%20V%C3%ADdeos%20Profissionais" target="_blank" rel="noopener">Quero produzir vídeos ↗</a></div>
+        </details></li>
+        <li><details>
+          <summary><span class="n">03</span><h3>Automação<small>Soluções que otimizam seu tempo.</small></h3><span class="mais" aria-hidden="true">+</span></summary>
+          <div class="corpo"><p>Landing pages, automações de atendimento e ferramentas digitais que transformam atenção em conversa no WhatsApp.</p>
+            <div class="tags"><span>Landing pages</span><span>Automações</span><span>Sistemas</span></div>
+            <a class="lk" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Quero%20saber%20mais%20sobre%20Tecnologia%20%2F%20Automa%C3%A7%C3%A3o" target="_blank" rel="noopener">Quero falar sobre automação ↗</a></div>
+        </details></li>
+      </ul>
+    </main>
+  </div>
 </div>
+
+<div class="faixa" aria-hidden="true"><div class="trk" id="faixa"></div></div>
+
+<section class="marcas">
+  <div class="wrap"><div class="k">Portfólio</div><h2>Marcas que fizeram parte da jornada.</h2></div>
+  <div class="rail"><div class="trk" id="logos"></div></div>
 </section>
-<section id="segmentos" aria-labelledby="sector-heading">
-<header class="section-head"><span>03 / Áreas de atuação</span><h2 id="sector-heading">Segmentos que atendemos.</h2><p>Conteúdo e posicionamento que falam a língua do seu público.</p></header>
-<ul class="sectors"><li><img src="assets/capa-beleza.svg" alt="" width="260" height="148" loading="lazy"><span>Beleza</span></li><li><img src="assets/capa-estetica.svg" alt="" width="260" height="148" loading="lazy"><span>Estética</span></li><li><img src="assets/capa-gastronomia.svg" alt="" width="260" height="148" loading="lazy"><span>Gastronomia</span></li><li><img src="assets/capa-saude.svg" alt="" width="260" height="148" loading="lazy"><span>Saúde</span></li><li><img src="assets/capa-moda.svg" alt="" width="260" height="148" loading="lazy"><span>Moda</span></li><li><img src="assets/capa-varejo.svg" alt="" width="260" height="148" loading="lazy"><span>Varejo</span></li><li><img src="assets/capa-educacao.svg" alt="" width="260" height="148" loading="lazy"><span>Educação</span></li><li><img src="assets/capa-turismo.svg" alt="" width="260" height="148" loading="lazy"><span>Turismo</span></li><li><img src="assets/capa-mercado-imobiliario.svg" alt="" width="260" height="148" loading="lazy"><span>Mercado Imobiliário</span></li><li><img src="assets/capa-prestacao-de-servicos.svg" alt="" width="260" height="148" loading="lazy"><span>Prestação de Serviços</span></li></ul>
+
+<section class="seg">
+  <div class="wrap"><div class="k">Áreas de atuação</div>
+    <div class="tags"><span>Beleza</span><span>Estética</span><span>Gastronomia</span><span>Saúde</span><span>Moda</span><span>Varejo</span><span>Educação</span><span>Turismo</span><span>Mercado imobiliário</span><span>Prestação de serviços</span></div>
+  </div>
 </section>
-<section class="contact" id="contato">
-<span>04 / Contato</span><h2>Vamos conversar?</h2>
-<p>Atendimento para marcas, empresas e projetos que querem crescer com tráfego, vídeo e tecnologia.</p>
-<a class="primary" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20meu%20projeto.">Conversar no WhatsApp <svg class="cta-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5M6 5h9v9"/></svg></a>
-<p class="phone">43 9 9676-9373</p>
-</section>
-<footer>Pedro Yarin · Londrina, Paraná <a href="https://www.instagram.com/silvayarin/">Instagram</a></footer>
-</div>
-</main>
-<script src="motion.js" defer></script>
-</body></html>
+
+<footer class="fim">
+  <div class="wrap">
+    <div class="k">Contato</div>
+    <h2>Vamos<br><em>conversar?</em></h2>
+    <p>Atendimento para marcas, empresas e projetos que querem crescer com tráfego, vídeo e tecnologia.</p>
+    <a class="cta" href="https://wa.me/5543996769373?text=Ol%C3%A1%2C%20Pedro%21%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20conversar%20sobre%20o%20meu%20projeto." target="_blank" rel="noopener">Conversar no WhatsApp <span aria-hidden="true">↗</span></a>
+    <div class="rod"><span>Pedro Yarin · Londrina, Paraná · 43 9 9676-9373</span><a href="https://www.instagram.com/silvayarin/" target="_blank" rel="noopener">Instagram ↗</a></div>
+  </div>
+</footer>
+
+<script>
+{
+  const marcas = [['ambev','Ambev',34],['pado','Pado',46],['gelaboca','Gelaboca',36],['roma','Roma',40],['adr','ADR',36],['zinco','Zinco',34],['live-colours','Live Colours',36],['mor-salon','MŌR Salon',44],['londrina-norte-shopping','Londrina Norte Shopping',44],['aurora-shopping','Aurora Shopping',44],['agrobar','Agrobar',36],['agroplay','Agroplay',34],['schwarzkopf','Schwarzkopf',36],['folks','Folks',36]];
+  const um = marcas.map(([f, n, h]) => `<img src="/assets/${f}.webp" alt="${n}" style="--h:${h}px" loading="lazy">`).join('');
+  document.getElementById('logos').innerHTML = um + um.replace(/alt="[^"]*"/g, 'alt=""');
+  const f = '<span>Tráfego</span><span>✳</span><span>Vídeo</span><span>✳</span><span>Automação</span><span>✳</span>';
+  document.getElementById('faixa').innerHTML = f.repeat(6);
+}
+</script>
+</body>
+</html>
